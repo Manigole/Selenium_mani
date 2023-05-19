@@ -145,6 +145,11 @@ public class Registration {
         Thread.sleep(1000);
         System.out.println("User clicked Next ");
     }
-
+    @Test(priority = 17,groups = { "loginpage" })
+    public void closeBrowser() throws InterruptedException {
+        Thread.sleep(2000);
+        driver.close();
+        System.out.println("browser closed");
+    }
 
 }
